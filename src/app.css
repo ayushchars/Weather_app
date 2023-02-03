@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    width: 100%;
+    height: 60px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bar {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bar>input {
+    width: 20%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border-width: 0;
+}
+
+.search_bar>button {
+    width: 100px;
+    height: 50px;
+    margin: 0px 20px;
+    border-radius: 50px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.content {
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.content>h1 {
+    font-size: 100px;
+    text-transform: capitalize;
+}
+
+.content>span {
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 120px 20px;
+}
+
+.content>span:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.content>h2 {
+    font-size: 80px;
+}
