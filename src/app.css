@@ -10,7 +10,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+.content {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .title {
@@ -29,18 +35,18 @@
     justify-content: center;
 }
 
-.search_bar>input {
-    width: 20%;
+.search_bar > input {
+    width: 40%; 
     height: 50px;
-    font-size: 40px;
+    font-size: 20px; 
     text-align: center;
     text-transform: capitalize;
     border-radius: 50px;
     border-width: 0;
 }
 
-.search_bar>button {
-    width: 100px;
+.search_bar > button {
+    width: 10%; 
     height: 50px;
     margin: 0px 20px;
     border-radius: 50px;
@@ -54,24 +60,50 @@
     margin-top: 150px;
 }
 
-.content>h1 {
-    font-size: 100px;
+.content > h1 {
+    font-size: 50px;
     text-transform: capitalize;
 }
 
-.content>span {
+.content > span {
     margin: 10px;
-    font-size: 20px;
+    font-size: 16px;
     border: 1px solid black;
     padding: 5px;
-    margin: 120px 20px;
+    margin: 20px;
 }
 
-.content>span:hover {
+.content > span:hover {
     background-color: black;
     color: #fff;
 }
 
-.content>h2 {
-    font-size: 80px;
+.content > h2 {
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .search_bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search_bar > input,
+    .search_bar > button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content > h1 {
+        font-size: 40px;
+    }
+
+    .content > span {
+        font-size: 14px;
+    }
+
+    .content > h2 {
+        font-size: 30px;
+    }
 }
